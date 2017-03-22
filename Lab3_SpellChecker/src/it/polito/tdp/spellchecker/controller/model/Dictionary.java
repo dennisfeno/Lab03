@@ -3,6 +3,7 @@ package it.polito.tdp.spellchecker.controller.model;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -43,6 +44,7 @@ public class Dictionary {
 		} catch (IOException e){
 		System.out.println("Errore nella lettura del file");
 		}
+		Collections.sort(this.dictionary);
 	}
 	
 	public List<RichWord> spellCheckText(List<String> inputTextList){
@@ -85,7 +87,7 @@ public class Dictionary {
 				now = (int)((j-i)/2+i);
 				
 				k = this.dictionary.get(now);
-				System.out.println(str + "," + k + "," + i + "," + now + "," + j);
+				//System.out.println(str + "," + k + "," + i + "," + now + "," + j);
 
 				if (str.compareTo(k)==0){
 					support=true;

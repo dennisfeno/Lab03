@@ -5,6 +5,7 @@
 package it.polito.tdp.spellchecker.controller;
 
 import java.net.URL;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -146,6 +147,7 @@ public class SpellCheckerController {
         
         ital.loadDictionary("Italian");
         engl.loadDictionary("English");
+
     }
 }
 
