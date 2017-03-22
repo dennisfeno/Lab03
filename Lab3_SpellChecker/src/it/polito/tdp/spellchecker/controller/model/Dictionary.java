@@ -22,7 +22,7 @@ public class Dictionary {
 	 * proposito, utilizzare i file Italian.txt e English.txt nella cartella rsc. I file contentengono una
 	 * parola per riga. Salvare le parole del dizionario in una struttura dati appropriata. Di seguito
 	 * viene riportato un esempio della sequenza di operazioni necessarie per leggere le parole dal
-	 * file:
+	 * file
 	 */
 	
 	public void loadDictionary(String language){
